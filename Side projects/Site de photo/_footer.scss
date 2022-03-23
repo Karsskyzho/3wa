@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    margin:none;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+footer p:hover {
+    cursor: pointer;
+}

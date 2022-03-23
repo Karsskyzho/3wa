@@ -1,0 +1,33 @@
+/* 
+@mixin popup($top,$left) {
+    width : 80vh;
+    height: 30vh;
+    border-radius: 8px;
+    background-color: indianred;
+    position: fixed;
+    top : $top;
+    left : $left;
+} */
+.popup {
+/*     @include popup(10%, 30%); */
+    z-index: 9999;
+    position: fixed;
+    --popup-top: 10%;
+    --popup-width: 80vw;
+    --popup-height: 30vh;
+    --popup-color:indianred;
+    top: var(--popup-top);
+    width: var(--popup-width);
+    height: var(--popup-height);
+    background-color: var(--popup-color);
+    left: calc((100vw - var(--popup-width))/2);
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 9000;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 5%;
+  height: 80px;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+}
+
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .links a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 15px;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-line {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-line .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav .links a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+
+  nav .icon-line {
+    display: block;
+  }
+
+  nav :checked ~ .icon-line .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked ~ .icon-line .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked ~ .icon-line .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+.banner {
+  margin-top: 6em;
+  text-align: center;
+}
+
+main,
+footer,
+header {
+  font-family: "Pacifico", cursive;
+}
+
+.banner p {
+  font-size: 2em;
+}
+
+.banner img {
+  width: 30%;
+}
+
+main {
+  text-align: -webkit-center;
+}
+
+hr {
+  margin-top: 2em;
+}
+
+.monument img,
+.nature img,
+.food img {
+  border-radius: 5%;
+  transition: 0.25s ease;
+  filter: grayscale(100%);
+}
+
+.monument,
+.nature,
+.food {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 20px;
+  justify-content: center;
+}
+.monument > div img,
+.nature > div img,
+.food > div img {
+  width: 100%;
+  height: 100%;
+}
+.monument > div,
+.nature > div,
+.food > div {
+  width: 360px;
+  height: 280px;
+  transition: width 2s height 2s;
+}
+.monument > div:hover,
+.nature > div:hover,
+.food > div:hover {
+  transform: scale(1.1);
+}
+.monument > div:hover > img:hover,
+.nature > div:hover > img:hover,
+.food > div:hover > img:hover {
+  filter: none;
+}
+
+h2 {
+  color: #3f5efb;
+}
+
+.footer {
+  width: 100%;
+  margin: none;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
