@@ -15,4 +15,4 @@ const main = () => {
     console.log(admin.canEditArticles());
 };
 
-addEventListener('load', main);
+addEventListener('load', main);// lancer la fonction main au chargement de la page
