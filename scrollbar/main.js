@@ -1,4 +1,4 @@
-const main = () => {
+/* const main = () => {
 
     const header = document.querySelector('.header');
     const div = document.createElement("div");
@@ -16,8 +16,19 @@ const main = () => {
 
 
     document.addEventListener("scroll", progressBar);
+} */
+const main = () => {
+    
+        const background = document.querySelector('body');
+        const progressBar = () => {
+            const bodyHeight = document.body.clientHeight;
+    
+            const width = (360* window.scrollY) / (bodyHeight - window.innerHeight);
+            background.style.backgroundColor = `hsl(${width}, 50%, 50%)` ;
+            console.log(width);
+                }
+        document.addEventListener("scroll", progressBar);
 }
-
 
 
 
