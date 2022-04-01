@@ -32,7 +32,6 @@ img {
     border-radius: 15px;
     box-shadow: 5px 11px 20px rgb(255, 242, 0);
     background-color: white;
-    display : inline-block;
 }
 
 
@@ -41,11 +40,10 @@ img {
     height: 30px;
     opacity: 30%;
     position: absolute;
-
 }
 .right {
     top: 50%;
-    display: flex;
+    right: 20px;
 }
 
 .button-slider:hover {
