@@ -8,7 +8,7 @@ const main = () => {
 
 TweenMax.to(".right", 2, {
     delay : 2,
-    left : "+100%",
+    left : "+150%",
     ease : Expo.easeInOut,
 });
 

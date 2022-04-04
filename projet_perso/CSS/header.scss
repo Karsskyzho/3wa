@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); // font-family: 'Poppins', sans-serif;
+
 html {
     width : 100%;
     height: 100%;
@@ -5,20 +7,30 @@ html {
 body {
     overflow-x: hidden;
 }
-.banner {
+header {
+    height : 75vh;
+}
+.banner {//
     width: 100vw;
-    height : 100vh;
+    height : 75vh;
     overflow: hidden;
     background-size: cover;
     top : 0;
+    position: absolute;
+    z-index: -1;
+    filter: blur(3.5px);
+    -webkit-filter: blur(3.5px);
+    -moz-filter: blur(3.5px);
+    -o-filter: blur(3.5px);
+    -ms-filter: blur(3.5px);
 }
 
 .nav {
-    line-height: 250px;
+    line-height: 30vh;
+    position: relative;
 }
 
 .nav ul {
-    color : white;
     width: fit-content;
     margin: 0 auto;
     padding: 0;
@@ -31,7 +43,6 @@ body {
     font-size: 35px;
     margin : 0 25px;
     text-align: center;
-
 }
 
 
@@ -43,6 +54,7 @@ body {
     background-size: cover;
     top : 0;
     left : 0;
+    z-index: 9999;
 
 }
 .right {
@@ -53,5 +65,18 @@ body {
     background-size: cover;
     top : 0;
     right : 0;
+    z-index: 9999;
 }
 
+header h1, 
+header h2,
+header a {
+    color : white;
+    font-family : 'Poppins', sans-serif;
+ text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1, h2 { 
+    justify-content: center;
+    text-align: center;
+}
