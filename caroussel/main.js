@@ -16,8 +16,7 @@ const main = () => {
         container.scrollLeft -= 385;
     }
     btnLeft.addEventListener('click', left);
-}
-
+};
 
 addEventListener("load", main);
 
