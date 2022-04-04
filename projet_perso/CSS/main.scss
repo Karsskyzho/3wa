@@ -7,7 +7,44 @@ main {
     padding : 0 30px;
 }
 
+.second {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.second div:nth-child(1) {
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+}
 .second h3 {
     padding : 0 40px;
+    text-align: baseline;
+    font-family: poppins, sans-serif;
+    font-size: 1.5rem;
 }
 
+.first-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap : 30px;
+}
+.first-container img {
+    border : 9px solid rgb(203 185 132);
+}
+
+.content button {
+    background-color : rgb(203 185 132);
+    padding: 1em;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.content div p {
+    margin-bottom: 30px;
+}
