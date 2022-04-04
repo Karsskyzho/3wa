@@ -15,12 +15,4 @@ export const carrousel = () => {
         container.scrollLeft -= 100;
     }
     btnLeft.addEventListener('click', left);
-
-
-
-    element.addEventListener('click', (e) => {
-        console.log(e); // pour voir si c'est détecté 
-        console.log(e.target); // pour voir quel élement est la cible exact du clic
-        maFonctionEffectuée(); 
-        }); 
 };
