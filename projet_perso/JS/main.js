@@ -1,4 +1,7 @@
+import { carrousel } from './scroll.js';
+
 const main = () => {
+
 
     TweenMax.to(".left", 2, {
     delay : 1.5,
@@ -11,7 +14,7 @@ TweenMax.to(".right", 2, {
     left : "+150%",
     ease : Expo.easeInOut,
 });
-
+carrousel;
 }
 
 addEventListener('load', main);

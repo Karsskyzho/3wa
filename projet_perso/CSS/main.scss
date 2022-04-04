@@ -1,17 +1,54 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     padding : 0 30px;
 }
 
-.second {
-    justify-content: center;
-    align-items: center;
+
+// carousel 
+.first {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+.container ul {
+    display: flex;
+    flex-direction: wrap;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+
+    border-radius: 15px;
+    gap: 30px;
+    padding : 1em;
+}
+.button-slider {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: rgb(203 185 132);
+    color : white;
+    font-weight: 900;
+    margin-block: auto;
+}
+.slider div img {
+    width: 200px;
+    height: 200px;
+    border: solid 1px rgb(255, 0, 0);
+    border-radius: 15px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .second div:nth-child(1) {
     margin-bottom: 30px;
@@ -46,5 +83,5 @@ main {
 }
 
 .content div p {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }

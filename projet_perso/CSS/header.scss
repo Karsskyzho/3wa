@@ -11,6 +11,9 @@ body {
 header {
     height : 75vh;
 }
+li {
+    list-style-type: none;
+}
 .banner {//
     width: 100vw;
     height : 75vh;
@@ -40,7 +43,6 @@ header {
 .nav ul li {
     cursor : pointer;
     display : inline-block;
-    list-style: none;
     font-size: 35px;
     margin : 0 25px;
     text-align: center;
@@ -80,3 +82,5 @@ h1, h2 {
     justify-content: center;
     text-align: center;
 }
+
+
