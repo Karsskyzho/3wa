@@ -12,22 +12,30 @@
 </head>
 <body>
     <header>
-        <div class="left"></div>
+<!--         <div class="left"></div>
         <div class="right"></div>
-        
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="qui_somme_nous.html">Qui sommes-nous?</a></li>
-                <li><a href="products.html">Nos produits</a></li>
-                <li><a href="contact.html">Contact</a></li>
+         -->
+        <nav class="nav navbar">
+            <a href="#" class="nav-brand"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Accueil</a></li>
+                <li class="nav-item"><a target="_blank" href="qui_somme_nous.html">Qui sommes-nous?</a></li>
+                <li class="nav-item"><a target="_blank" href="products.html">Nos produits</a></li>
+                <li class="nav-item"><a target="_blank" href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     <div class="bakground">
         <img class="banner" src="../images/backgroundhd.jpg" alt="french castle banner">
     </div> 
+    <div class="title">
     <h1>Royalement Français!</h1>
     <h2>« A nul autre pareil ! »</h2>
+    </div>
     </header>
 
                     <!-- main -->
@@ -36,8 +44,8 @@
         <div class="first">
             <h2> Produits vedettes</h2>
             <div class="container" id='container'> 
-                <button class ="button-slider left--move">&#129136</button>
-                <ul class="carrousel owl-carousel owl-theme">
+               <!--  <button class ="button-slider left--move">&#129136</button> -->
+                <ul class="carousel owl-carousel owl-theme">
                     <li class="slider item">
                         <div> 
                             <img src="../images/savons/Pack-savons-aloe-vera-big.jpg" alt="pack savons">
@@ -80,7 +88,7 @@
                     </li>
                     
                 </ul>
-                <button class ="button-slider right--move">&#x2794</button>
+<!--                 <button class ="button-slider right--move">&#x2794</button> -->
             </div>
         </div>
 

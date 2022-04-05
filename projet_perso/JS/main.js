@@ -1,5 +1,4 @@
-import { carrousel } from './scroll.js';
-
+import { responsiveNavBar } from './navbar.js';
 const main = () => {
 
 
@@ -14,27 +13,16 @@ TweenMax.to(".right", 2, {
     left : "+150%",
     ease : Expo.easeInOut,
 });
-carrousel();
-}
+
+
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
+    margin: 28,
+    autoplay:true,
+    autoplayTimeout:1500,
 })
+responsiveNavBar();
+}
+
 
 addEventListener('load', main);

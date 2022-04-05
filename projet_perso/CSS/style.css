@@ -282,14 +282,18 @@ button {
 }
 
 .nav {
-  line-height: 30vh;
+  line-height: 10vh;
   position: relative;
+  margin-top: 15vh;
 }
 
 .nav ul {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav ul li {
@@ -298,6 +302,15 @@ button {
   font-size: 35px;
   margin: 0 25px;
   text-align: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
+.nav-item a:hover {
+  color: rgba(219, 217, 132, 0.677);
 }
 
 .left {
@@ -334,6 +347,100 @@ h1, h2 {
   text-align: center;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  height: 25px;
+}
+.hamburger .bar:first-child {
+  top: -2px;
+}
+.hamburger .bar:last-child {
+  top: 2px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #f70000;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (max-width: 1168px) {
+  .banner,
+.left,
+.right,
+.title h2 {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    transform: scale(0);
+    top: 70px;
+    flex-direction: column;
+    gap: 0;
+    background-color: #cbb984;
+    width: 100vw;
+    text-align: center;
+    transition: 0.3s;
+    transform-origin: top right;
+  }
+
+  .nav-menu.active {
+    transform: scale(1);
+    flex-direction: column;
+  }
+
+  .navbar {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cbb984;
+    top: 0;
+    position: fixed;
+    margin: auto;
+    transition: 0.3s;
+    gap: 0;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
