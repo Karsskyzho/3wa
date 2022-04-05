@@ -402,8 +402,12 @@ h1, h2 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-item {
-    margin: 16px 0;
+  .nav-item a {
+    font-size: 20px;
+  }
+
+  .nav-item li {
+    height: 2em;
   }
 
   .nav-menu {
