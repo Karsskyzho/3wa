@@ -145,8 +145,11 @@ h1, h2 {
     .hamburger.active .bar:nth-child(3) {
         transform:translateY(-8px) rotate(-45deg);  
     }
-    .nav-item {
-        margin: 16px 0;
+    .nav-item a {
+        font-size: 20px;
+    }
+    .nav-item li {
+        height: 2em;
     }
 
     .nav-menu {
