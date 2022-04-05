@@ -1,12 +1,12 @@
 'use strict';
-
+/* 
 const container = document.querySelector('#container');
 const btnRight = document.querySelector('.right');
-const btnLeft = document.querySelector('.left');
+const btnLeft = document.querySelector('.left'); */
 
 const main = () => {
 
-    const right = () => {
+/*     const right = () => {
         container.scrollLeft += 385;
     };
 
@@ -15,7 +15,7 @@ const main = () => {
     const left = () => {
         container.scrollLeft -= 385;
     }
-    btnLeft.addEventListener('click', left);
+    btnLeft.addEventListener('click', left); */
 };
 
 addEventListener("load", main);

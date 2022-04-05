@@ -1,4 +1,4 @@
-
+/* 
 export const carrousel = () => {
     const container = document.querySelector('.container');
 
@@ -15,4 +15,4 @@ export const carrousel = () => {
         container.scrollLeft -= 100;
     }
     btnLeft.addEventListener('click', left);
-};
+}; */

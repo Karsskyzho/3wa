@@ -366,7 +366,8 @@ h1, h2 {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #f70000;
+  background-color: white;
+  margin-right: 1em;
 }
 
 .display-none {
@@ -374,6 +375,10 @@ h1, h2 {
 }
 
 @media screen and (max-width: 1168px) {
+  header {
+    height: 10vh;
+  }
+
   .banner,
 .left,
 .right,
@@ -433,12 +438,15 @@ h1, h2 {
     gap: 0;
     flex-direction: row;
     text-align: center;
+    z-index: 9999;
   }
 
   .title h1 {
     font-size: 1em;
     position: fixed;
     top: 0;
+    z-index: 10000;
+    padding: 1em;
   }
 }
 main {
@@ -505,7 +513,6 @@ main {
 
 .second h3 {
   padding: 0 40px;
-  text-align: baseline;
   font-family: poppins, sans-serif;
   font-size: 1.5rem;
 }
@@ -533,6 +540,49 @@ main {
 
 .content div p {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 726px) {
+  main {
+    padding: 0;
+  }
+
+  .first-container img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .first {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1168px) {
+  .second h3 {
+    text-align: center;
+  }
+
+  .first-container {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-container div {
+    text-align: center;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  .content div {
+    text-align: initial;
+  }
+
+  .content button {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

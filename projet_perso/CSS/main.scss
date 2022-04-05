@@ -59,7 +59,6 @@ main {
 }
 .second h3 {
     padding : 0 40px;
-    text-align: baseline;
     font-family: poppins, sans-serif;
     font-size: 1.5rem;
 }
@@ -88,4 +87,46 @@ main {
 
 .content div p {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 726px) {
+    main {
+        padding: 0;
+    }
+    .first-container img {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .first {
+    display: none !important;
+}
+
+}
+
+@media screen and (max-width: 1168px) {
+    .second h3 {
+    text-align: center;
+    }
+    .first-container {
+        flex-direction: column;
+        gap : 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-container div {
+        text-align: center;
+    }
+    
+    .content {
+        width: 80%;
+    }
+    .content div {
+        text-align: initial;
+    }
+    .content button {
+        justify-content: center;
+    }
 }
