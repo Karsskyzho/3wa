@@ -564,7 +564,6 @@ button {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
-  text-align: center;
   margin: 0;
   width: 80%;
 }
@@ -580,8 +579,7 @@ button {
 
 .second-container .content {
   margin: 0;
-  justify-content: center;
-  text-align: -webkit-center;
+  text-align: initial;
 }
 
 .content p {
@@ -604,7 +602,7 @@ button {
     display: none !important;
   }
 }
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1260px) {
   .second h3 {
     text-align: center;
   }
@@ -622,6 +620,7 @@ button {
 
   .content {
     width: 80%;
+    text-align: initial;
   }
 
   .content div {
