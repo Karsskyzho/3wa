@@ -5,7 +5,7 @@ main {
 }
 
 
-// carrousel 
+/* --------------------------carrousel------------------------- */
 .first {
     display: flex;
     flex-direction: column;
@@ -46,18 +46,28 @@ main {
     box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
+
+
+
+
+
 .second {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap : 30px;
 }
 .second div:nth-child(1) {
     margin-bottom: 30px;
     width: 100%;
     align-items: center;
 }
+.second:nth-child(1) {
+    flex-wrap: wrap;
+}
 .second h3 {
+    margin-top: 2em;
     padding : 0 40px;
     font-family: poppins, sans-serif;
     font-size: 1.5rem;
@@ -69,11 +79,11 @@ main {
     width: 60%;
     gap : 30px;
 }
-.first-container img {
+.first-container img,
+.second-container img {
     border : 9px solid rgb(203 185 132);
 }
-
-.content button {
+button {
     background-color: rgb(203 185 132);
     padding: 1em;
     border-style: none;
@@ -81,13 +91,59 @@ main {
     align-items: center;
     color: white;
     font-weight: bold;
+    margin-top : 2em;
+    margin-bottom: 0;
 }
-
-
 
 .content div p {
     margin-bottom: 10px;
 }
+
+/* --------------------------second container-----------------  */
+
+
+@mixin product {
+    display: flex;
+    flex-direction: row;
+    gap : 20px;
+    justify-content: center;
+    text-align: center;
+    margin : 0;
+    width: 80%;
+}
+
+
+.second-container,
+.thrid-container {
+    @include product;
+}
+.second-container div {
+    flex: 1 0;
+}
+
+.second img {
+    width: 400px;
+    height: 400px;
+}
+.second-container .content{
+    margin : 0; 
+    justify-content: center;
+    text-align: -webkit-center;
+}
+.content p {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+/* -------------------------responsive ------------------------ */
+
 
 @media screen and (max-width: 726px) {
     main {
