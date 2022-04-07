@@ -1,6 +1,9 @@
 import { responsiveNavBar } from './navbar.js';
-const main = () => {
+import { API } from './scroll.js';
 
+
+
+const main = () => {
 
 /*     TweenMax.to(".left", 2, {
     delay : 1,
@@ -14,16 +17,17 @@ TweenMax.to(".right", 2, {
     ease : Expo.easeInOut,
 }); */
 
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin: 28,
+        autoplay:true,
+        autoplayTimeout:1800,
+    })
+    responsiveNavBar();
 
 
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin: 28,
-    autoplay:true,
-    autoplayTimeout:1800,
-})
-responsiveNavBar();
+    API();
 }
 
 addEventListener('load', main);

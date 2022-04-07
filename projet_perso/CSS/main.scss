@@ -99,6 +99,17 @@ button {
     margin-bottom: 10px;
 }
 
+
+
+
+.apparitionAPI {
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
 /* --------------------------second container-----------------  */
 
 
@@ -136,27 +147,26 @@ button {
 
 
 
-
-
-
-
-
 /* -------------------------responsive ------------------------ */
-
 
 @media screen and (max-width: 726px) {
     main {
         padding: 0;
     }
-    .first-container img {
-        width: 80%;
-    }
 }
-
 
 @media screen and (max-width: 900px) {
     .first {
     display: none !important;
+}
+.first-container div {
+    text-align: left !important;
+}
+.second-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width : 60%;
 }
 }
 
@@ -173,9 +183,8 @@ button {
     .first-container div {
         text-align: center;
     }
-    
     .content {
-        width: 80%;
+        width: 100%;
         text-align: initial;
     }
     .content div {

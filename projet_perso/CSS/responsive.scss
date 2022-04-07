@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+@media screen and (max-width: 1605px) {
+    .contenu-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .verif-logo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .contenu-footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 80%;
+    }
+    .bloc {
+        width: 100% !important;
+        padding-left: 30px !important;
+    }
+}

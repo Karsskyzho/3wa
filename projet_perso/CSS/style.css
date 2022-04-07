@@ -244,6 +244,30 @@ template {
   display: none;
 }
 
+/* footer */
+@media screen and (max-width: 1605px) {
+  .contenu-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .verif-logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contenu-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+  }
+
+  .bloc {
+    width: 100% !important;
+    padding-left: 30px !important;
+  }
+}
 html {
   width: 100%;
   height: 100%;
@@ -557,6 +581,11 @@ button {
   margin-bottom: 10px;
 }
 
+.apparitionAPI {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
 /* --------------------------second container-----------------  */
 .second-container,
 .thrid-container {
@@ -592,14 +621,21 @@ button {
   main {
     padding: 0;
   }
-
-  .first-container img {
-    width: 80%;
-  }
 }
 @media screen and (max-width: 900px) {
   .first {
     display: none !important;
+  }
+
+  .first-container div {
+    text-align: left !important;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
   }
 }
 @media screen and (max-width: 1260px) {
@@ -619,7 +655,7 @@ button {
   }
 
   .content {
-    width: 80%;
+    width: 100%;
     text-align: initial;
   }
 
@@ -636,6 +672,7 @@ footer {
   color: #fff;
   width: 100%;
   border-top: 1px solid #000;
+  margin-top: 20px;
 }
 
 .contenu-footer {
@@ -675,6 +712,11 @@ footer {
 
 .footer-contact p {
   padding: 10px 0;
+}
+
+.liste-social {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */

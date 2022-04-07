@@ -3,6 +3,7 @@ footer {
     color: #fff;
     width: 100%;
     border-top:  1px solid #000;
+    margin-top: 20px;
 }
 
 .contenu-footer {
@@ -21,10 +22,10 @@ footer {
     width: 25%;
     margin : 0 30px;
 }
- .footer-adresses p,
- .liste-horaires li{
-     padding : 10px 0;
- }
+.footer-adresses p,
+.liste-horaires li{
+    padding : 10px 0;
+}
 
 .verif-logo {
     position: relative;
@@ -41,4 +42,9 @@ footer {
 
 .footer-contact p {
     padding : 10px 0;
+}
+
+.liste-social {    
+    display: flex;
+    flex-wrap: wrap;
 }

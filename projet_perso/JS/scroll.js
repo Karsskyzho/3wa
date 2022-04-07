@@ -1,18 +1,15 @@
-/* 
-export const carrousel = () => {
-    const container = document.querySelector('.container');
+export const API = () => {
+    let obsever = new IntersectionObserver(handleIntersect, options)
 
-    const btnRight = document.querySelector('.right--move');
-    const btnLeft = document.querySelector('.left--move');
 
-    const right = () => {
-        container.scrollLeft += 100;
-    };
+    let target = document.querySelector('.apparitionAPI');
+    obsever.observe(target); obsever.observe(target);
 
-    btnRight.addEventListener('click', right);
 
-    const left = () => {
-        container.scrollLeft -= 100;
-    }
-    btnLeft.addEventListener('click', left);
-}; */
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .1,
+}
+
+}
