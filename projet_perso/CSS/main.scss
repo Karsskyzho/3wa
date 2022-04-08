@@ -78,6 +78,7 @@ main {
     flex-direction: row;
     width: 60%;
     gap : 30px;
+    align-items: center;
 }
 .first-container img,
 .second-container img {
@@ -100,11 +101,16 @@ button {
 }
 
 
+/* ----------------------------------observer------------------------------------- */
 
-
-.apparitionAPI {
-    position: relative;
-    transition: 0.5s ease-in-out;
+.reveal {
+    opacity: 0;
+    transform : translateX(300px);
+}
+.reveal-visible {
+    opacity :1;
+    transform : translateX(0);
+    transition: 1.5s;
 }
 
 
@@ -118,11 +124,9 @@ button {
     flex-direction: row;
     gap : 20px;
     justify-content: center;
-
     margin : 0;
     width: 80%;
 }
-
 
 .second-container,
 .thrid-container {
@@ -148,6 +152,24 @@ button {
 
 
 /* -------------------------responsive ------------------------ */
+@media screen and (min-width: 1605px) {
+    .contenu-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .owl-item {
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 0;
+    }
+}
+
 
 @media screen and (max-width: 726px) {
     main {

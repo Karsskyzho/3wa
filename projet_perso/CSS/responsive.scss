@@ -1,26 +1,19 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// https://developer.mozilla.org/fr/docs/Web/CSS/@media/prefers-reduced-motion
+//les animations sont désactivées si l'utilisateur a choisi "Aucune animation" dans ses préférences. Il a donc la priorité sur les animations.
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        animation: none !important;
+        transition: none !important;
+        opacity: 0 !important;
+        transform : translateX(0) !important;
+    }
+}
 
 
 /* footer */
+
+
 
 @media screen and (max-width: 1605px) {
     .contenu-footer {

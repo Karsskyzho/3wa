@@ -244,6 +244,14 @@ template {
   display: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 0 !important;
+    transform: translateX(0) !important;
+  }
+}
 /* footer */
 @media screen and (max-width: 1605px) {
   .contenu-footer {
@@ -558,6 +566,7 @@ main {
   flex-direction: row;
   width: 60%;
   gap: 30px;
+  align-items: center;
 }
 
 .first-container img,
@@ -581,9 +590,16 @@ button {
   margin-bottom: 10px;
 }
 
-.apparitionAPI {
-  position: relative;
-  transition: 0.5s ease-in-out;
+/* ----------------------------------observer------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1.5s;
 }
 
 /* --------------------------second container-----------------  */
@@ -617,6 +633,21 @@ button {
 }
 
 /* -------------------------responsive ------------------------ */
+@media screen and (min-width: 1605px) {
+  .contenu-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .owl-item {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 726px) {
   main {
     padding: 0;
