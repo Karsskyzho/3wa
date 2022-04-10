@@ -76,7 +76,7 @@ main {
 .first-container {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 50%;
     gap : 30px;
     align-items: center;
 }
@@ -197,13 +197,10 @@ button {
     text-align: center;
     }
     .first-container {
-        flex-direction: column;
-        gap : 0;
-        justify-content: center;
-        align-items: center;
+        width: 60%;
     }
     .first-container div {
-        text-align: center;
+        text-align: left;
     }
     .content {
         width: 100%;
