@@ -276,6 +276,8 @@ template {
     padding-left: 30px !important;
   }
 }
+/* --------------------- variables ------------------- */
+/* ------------------------------ General --------------------------------- */
 html {
   width: 100%;
   height: 100%;
@@ -318,7 +320,6 @@ button {
   position: relative;
   margin-top: 15vh;
 }
-
 .nav ul {
   width: 100%;
   margin: 0 auto;
@@ -327,7 +328,6 @@ button {
   flex-direction: row;
   justify-content: center;
 }
-
 .nav ul li {
   cursor: pointer;
   display: inline-block;
@@ -343,28 +343,6 @@ button {
 
 .nav-item a:hover {
   color: rgba(219, 217, 132, 0.677);
-}
-
-.left {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  background: url(../images/gauche.png);
-  background-size: cover;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.right {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  background: url(../images/droite.png), no-repeat;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  z-index: 9999;
 }
 
 header h1,
@@ -384,14 +362,7 @@ h1, h2 {
   cursor: pointer;
   height: 25px;
 }
-.hamburger .bar:first-child {
-  top: -2px;
-}
-.hamburger .bar:last-child {
-  top: 2px;
-}
-
-.bar {
+.hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -400,6 +371,12 @@ h1, h2 {
   transition: all 0.3s ease-in-out;
   background-color: white;
   margin-right: 1em;
+}
+.hamburger .bar:first-child {
+  top: -2px;
+}
+.hamburger .bar:last-child {
+  top: 2px;
 }
 
 .display-none {
@@ -486,6 +463,7 @@ h1, h2 {
     padding: 1em;
   }
 }
+/* variables */
 main {
   display: flex;
   flex-direction: column;
@@ -629,11 +607,11 @@ button {
     width: 200px;
   }
 }
-@media screen and (max-width: 400px) {
-  main {
-    padding: 0;
-  }
-}
+/* @media screen and (max-width: 400px) {
+    main {
+        padding: 0;
+    }
+} */
 @media screen and (max-width: 726px) {
   main {
     padding: 0;
@@ -662,6 +640,7 @@ button {
 
   .first-container {
     width: 60%;
+    flex-direction: column;
   }
 
   .first-container div {

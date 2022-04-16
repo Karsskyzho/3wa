@@ -1,3 +1,6 @@
+/* variables */
+$color_primary: rgb(203 185 132);
+
 main {
     display: flex;
     flex-direction: column;
@@ -71,7 +74,7 @@ main {
 }
 .first-container img,
 .second-container img {
-    border : 9px solid rgb(203 185 132);
+    border : 9px solid $color_primary;
 }
 button {
     background-color: rgb(203 185 132);
@@ -153,11 +156,11 @@ button {
 
 
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     main {
         padding: 0;
     }
-}
+} */
 
 
 @media screen and (max-width: 726px) {
@@ -187,6 +190,7 @@ button {
     }
     .first-container {
         width: 60%;
+        flex-direction: column;
     }
     .first-container div {
         text-align: left;
@@ -201,5 +205,4 @@ button {
             justify-content: center;
         }
     }
-    
 }
