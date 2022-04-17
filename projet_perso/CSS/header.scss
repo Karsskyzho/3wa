@@ -94,9 +94,11 @@ h1, h2 {
 }
     .bar:first-child {
         top: -2px;
+        background-color: blue;
     }
     .bar:last-child {
         top: 2px;
+        background-color:red;
     }
 
 }

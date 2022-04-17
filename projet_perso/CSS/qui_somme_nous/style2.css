@@ -276,6 +276,8 @@ template {
     padding-left: 30px !important;
   }
 }
+/* --------------------- variables ------------------- */
+/* ------------------------------ General --------------------------------- */
 html {
   width: 100%;
   height: 100%;
@@ -318,7 +320,6 @@ button {
   position: relative;
   margin-top: 15vh;
 }
-
 .nav ul {
   width: 100%;
   margin: 0 auto;
@@ -327,7 +328,6 @@ button {
   flex-direction: row;
   justify-content: center;
 }
-
 .nav ul li {
   cursor: pointer;
   display: inline-block;
@@ -343,28 +343,6 @@ button {
 
 .nav-item a:hover {
   color: rgba(219, 217, 132, 0.677);
-}
-
-.left {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  background: url(../images/gauche.png);
-  background-size: cover;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.right {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  background: url(../images/droite.png), no-repeat;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  z-index: 9999;
 }
 
 header h1,
@@ -384,14 +362,7 @@ h1, h2 {
   cursor: pointer;
   height: 25px;
 }
-.hamburger .bar:first-child {
-  top: -2px;
-}
-.hamburger .bar:last-child {
-  top: 2px;
-}
-
-.bar {
+.hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -400,6 +371,14 @@ h1, h2 {
   transition: all 0.3s ease-in-out;
   background-color: white;
   margin-right: 1em;
+}
+.hamburger .bar:first-child {
+  top: -2px;
+  background-color: blue;
+}
+.hamburger .bar:last-child {
+  top: 2px;
+  background-color: red;
 }
 
 .display-none {
@@ -486,6 +465,7 @@ h1, h2 {
     padding: 1em;
   }
 }
+/* variables */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -499,6 +479,7 @@ h3 {
   text-align: center;
 }
 
+/* -------------------- first-section ------------------- */
 .about {
   padding: 20px;
   margin-top: 20px;
@@ -529,6 +510,43 @@ h3 {
   line-height: 2rem;
   text-align: left;
   width: 80%;
+}
+
+/* ----------------------- second section --------------------- */
+.our-artisans {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.our-artisans div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+}
+.our-artisans div:nth-child(1) div {
+  width: 500px;
+  height: 500px;
+  gap: 20px;
+  justify-content: center;
+}
+.our-artisans div:nth-child(1) div img {
+  width: 100%;
+  height: 100%;
+  border: #cbb984 9px solid;
+}
+.our-artisans div:nth-child(2) {
+  justify-content: center;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-artisans p {
+  width: 80%;
+  text-align: center;
+  padding: 1.5em;
 }
 
 @media screen and (max-width: 1600px) {

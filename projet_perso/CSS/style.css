@@ -374,9 +374,11 @@ h1, h2 {
 }
 .hamburger .bar:first-child {
   top: -2px;
+  background-color: blue;
 }
 .hamburger .bar:last-child {
   top: 2px;
+  background-color: red;
 }
 
 .display-none {
@@ -468,6 +470,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
+  justify-content: center;
 }
 
 /* --------------------------carrousel------------------------- */
@@ -575,7 +578,7 @@ button {
   gap: 20px;
   justify-content: center;
   margin: 0;
-  width: 80%;
+  width: 50%;
 }
 
 .second-container div {
