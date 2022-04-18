@@ -1,0 +1,21 @@
+/* variables */
+$color_primary: rgb(203 185 132);
+
+
+.galery {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."; 
+        img {
+            border : 9px solid $color_primary;
+            width: 400px;
+            height: 400px;
+        }
+    }

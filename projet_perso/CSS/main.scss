@@ -1,11 +1,15 @@
 /* variables */
 $color_primary: rgb(203 185 132);
 
+/* ---------------------- general -------------------------------- */
 main {
     display: flex;
     flex-direction: column;
     padding : 0 30px;
     justify-content: center;
+}
+hr {
+    margin:  30px;
 }
 
 
