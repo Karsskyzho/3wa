@@ -1,6 +1,5 @@
 export const API = () => {
     const ratio = .6;
-    
     const options = {
         root: null,
         rootMargin: '0px',
@@ -13,14 +12,10 @@ export const API = () => {
                 entry.target.classList.add('reveal-visible');
                 observer.unobserve(entry.target);
             }
-
         });
     }
     const observer = new IntersectionObserver(handleIntersect, options);
-
     document.querySelectorAll('.reveal').forEach(function (revealBoucle) {;
     observer.observe(revealBoucle);
-
 });
-
 }

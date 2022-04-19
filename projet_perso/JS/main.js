@@ -41,14 +41,14 @@ const main = () => {
         autoplay:true,
         autoplayTimeout:1800,
         items: 4,
-
         itemsDesktop : [1600,5], //3 items under 1600px browser width
-
     })
 });
-    responsiveNavBar();
 
-    API();
+API();
+
+responsiveNavBar();
+
 }
 
 addEventListener('load', main);
