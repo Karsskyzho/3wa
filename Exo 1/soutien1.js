@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, speed);
 
     });
-
     let compte = 0;
     let level = 1;
     let life = 5;
