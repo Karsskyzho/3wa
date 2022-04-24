@@ -11,13 +11,20 @@ main {
 .galery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap: 20px;
     div {     
         border : 9px solid $color_primary;
-    img {
+        flex-direction: column;
+        img {
             width: 380px;
             height: 380px;
+            }
+        .price {
+            display: flex;
+            border: none;
+            flex-direction: row;
+            justify-content: space-between;
             }
         }  
     }
@@ -32,6 +39,8 @@ main {
 @media screen and (max-width: 1410px) {
     main {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .galery {
         flex-direction: column;
