@@ -445,20 +445,29 @@ main {
 .galery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   gap: 20px;
 }
 .galery div {
   border: 9px solid #cbb984;
+  flex-direction: column;
 }
 .galery div img {
   width: 380px;
   height: 380px;
 }
+.galery div .price {
+  display: flex;
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 @media screen and (max-width: 1410px) {
   main {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .galery {
