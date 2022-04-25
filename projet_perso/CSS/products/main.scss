@@ -1,21 +1,57 @@
 /* variables */
 $color_primary: rgb(203 185 132);
 
-
+main {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+}
 .galery {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 10px 10px; 
-    grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    div {     
+        border : 9px solid $color_primary;
+        flex-direction: column;
         img {
-            border : 9px solid $color_primary;
-            width: 400px;
-            height: 400px;
+            width: 380px;
+            height: 380px;
+            }
+        .price {
+            display: flex;
+            border: none;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+        }  
+    }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1410px) {
+    main {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .galery {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        div {
+            width: 100%;
+            img {
+                width: 320px;
+                height: 320px;
+                }
         }
     }
+}
