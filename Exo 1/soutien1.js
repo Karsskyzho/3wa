@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let primary = document.getElementById('primary');
     primary.textContent = `Press space when you see the ${firstColor} color `;
 
-
-
-
     let compteur = 0;
     let idInterval;
     let speed = 1000;
