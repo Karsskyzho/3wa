@@ -615,11 +615,6 @@ button {
     width: 200px;
   }
 }
-/* @media screen and (max-width: 400px) {
-    main {
-        padding: 0;
-    }
-} */
 @media screen and (max-width: 726px) {
   main {
     padding: 0;

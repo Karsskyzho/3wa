@@ -19,3 +19,10 @@ export const API = () => {
     observer.observe(revealBoucle);
 });
 }
+
+
+export const removeClass = () => {
+    document.querySelectorAll('.reveal').forEach(function (revealBoucle) {
+        revealBoucle.classList.remove('reveal');
+    });
+}

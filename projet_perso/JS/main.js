@@ -1,5 +1,6 @@
 import { responsiveNavBar } from './navbar.js';
 import { API } from './scroll.js';
+import {removeClass} from './scroll.js';
 
 // ---------- Media Queries JavaScript-------------
 
@@ -11,27 +12,6 @@ const SCREENWIDTH = {
     EXTRASMALL: 414,
 };
 
-
-const laptops = (action) => {
-    const laptops = window.matchMedia(`${SCREENWIDTH.LARGE}px`);
-    laptops.addEventListener('change', action);
-    return laptops;
-addEventListener('resize', action);
-};
-
-const tablet = (action) => {
-    const tablet = window.matchMedia(`${SCREENWIDTH.MEDIUM}px`);
-    tablet.addEventListener('change', action);
-    return tablet;
-    addEventListener('resize', action);
-};
-
-const smartphone = (action) => {
-    const smartphone = window.matchMedia(`${SCREENWIDTH.SMALL}px`);
-    smartphone.addEventListener('change', action);
-    return smartphone;
-    addEventListener('resize', action);
-};
 
 const main = () => {
     $(document).ready(function() {
@@ -45,10 +25,17 @@ const main = () => {
     })
 });
 
-API();
 
+
+let larg = (window.innerWidth);
+if (larg > SCREENWIDTH.LARGE) {
+    API();
+}
+else {
+    removeClass();
+}
+};
 responsiveNavBar();
 
-}
 
 addEventListener('load', main);
