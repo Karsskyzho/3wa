@@ -662,7 +662,13 @@ button {
   }
 }
 @media screen and (max-width: 400px) {
-  .second img {
+  .second div {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+  }
+  .second div img {
     width: 320px;
     height: 320px;
   }
