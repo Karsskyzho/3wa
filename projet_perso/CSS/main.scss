@@ -170,16 +170,16 @@ button {
 @media screen and (max-width: 900px) {
     .first {
     display: none !important;
-}
-.first-container div {
-    text-align: left !important;
-}
-.second-container {
+    }
+    .first-container div {
+        text-align: left !important;
+    }
+    .second-container {
     display: flex;
     flex-direction: column;
     align-content: center;
     width : 60%;
-}
+    }
 }
 
 @media screen and (max-width: 1260px) {
@@ -203,4 +203,11 @@ button {
             justify-content: center;
         }
     }
+}
+
+@media screen and (max-width: 400px) {
+    .second img {
+        width: 320px;
+        height: 320px;
+        }
 }
