@@ -604,64 +604,6 @@ button {
   width: 80%;
 }
 
-.firstImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.secondeImg {
-  background-image: url("../images/savons/Savon-Aloe-vera-menthe-fraiche-big.jpg");
-  background-size: cover;
-}
-
-.thirdImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.fourthImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.fifthImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.sixthImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.seventhImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.eighthImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-.ninthImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-  background-size: cover;
-}
-
-/* Hover */
-/* -------------------------firstImg ------------------------ */
-@media screen and (min-width: 768px) {
-  .firstImg:hover {
-    background-image: url("../images/savons/Savon-patchouli-big.jpg");
-  }
-
-  .secondeImg img:hover {
-    background: url("../images/savons/Savons-menthe-fraiche-big.jpg");
-    transform: scale(1.1);
-  }
-}
-/* -------------------------secondeImg ------------------------ */
 /* -------------------------responsive ------------------------ */
 @media screen and (min-width: 1605px) {
   .contenu-footer {
