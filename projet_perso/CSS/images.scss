@@ -1,0 +1,85 @@
+@mixin img {
+    background-size: cover;
+    transition: all 1s ease-out;
+}
+
+.firstImg,
+.secondeImg,
+.thirdImg,
+.fourthImg,
+.fifthImg,
+.sixthImg,
+.seventhImg,
+.eighthImg,
+.ninthImg {
+    @include img;
+}
+
+
+.firstImg {
+    background-image: url('../images/savons/Savon-aloe-vera-patchouli-big.jpg');
+
+}
+
+.secondeImg {
+    background-image: url('../images/savons/Savon-Aloe-vera-menthe-fraiche-big.jpg');
+}
+
+.thirdImg {
+    background-image: url('../images/savons/Savon-artisanal-geranium-zoom.jpg');
+}
+
+.fourthImg {
+    background-image: url('../images/chaussures/VINCENT2_XB_07_1217.jpg');
+}
+
+.fifthImg {
+    background-image: url('../images/ceintures/ceinture2.jpg');
+}
+
+.sixthImg {
+    background-image: url('../images/sacs/porte-feuilles.jpg');
+}
+
+.seventhImg {
+    background-image: url('../images/savons/');
+}
+
+.eighthImg {
+    background-image: url('../images/savons/');
+}
+.ninthImg {
+    background-image: url('../images/savons/');
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+.firstImg:hover {
+    background-image: url('../images/savons/Savon-patchouli-big.jpg');
+};
+
+.secondeImg:hover {
+    background: url('../images/savons/Savon-menthe-fraiche-big.jpg');
+};
+
+
+.thirdImg:hover {
+    background-image: url('../images/savons/Savon-geranium-aloe-vera-zoom.jpg');
+
+};
+
+.fourthImg:hover {
+    background-image: url('../images/chaussures/VINCENT2_XB_08_eb70.jpg');
+}; 
+
+.fifthImg:hover {
+    background-image: url('../images/ceintures/ceinture1.png');
+};
+
+.sixthImg:hover { 
+    background-image: url('../images/sacs/porte-feuilles4.jpg');
+};
+}

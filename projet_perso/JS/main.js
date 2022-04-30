@@ -11,7 +11,7 @@ const SCREENWIDTH = {
     SMALL: 600,
     EXTRASMALL: 414,
 };
-
+let larg = (window.innerWidth);
 
 const main = () => {
     $(document).ready(function() {
@@ -22,19 +22,19 @@ const main = () => {
         autoplayTimeout:1800,
         items: 4,
     })
+    if (larg > SCREENWIDTH.LARGE) {
+        API();
+    }
+    else {
+        removeClass();
+    }
+
+    responsiveNavBar();
 });
-
-
-
-let larg = (window.innerWidth);
-if (larg > SCREENWIDTH.LARGE) {
-    API();
-}
-else {
-    removeClass();
-}
 };
-responsiveNavBar();
+
+
+
 
 
 addEventListener('load', main);
