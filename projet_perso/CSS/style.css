@@ -661,7 +661,7 @@ button {
     justify-content: center;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
   .second div {
     width: auto;
     padding-left: 10px;
@@ -671,6 +671,12 @@ button {
   .second div img {
     width: 320px;
     height: 320px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .second div img {
+    width: 260px;
+    height: 260px;
   }
 }
 .firstImg,
