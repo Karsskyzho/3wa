@@ -480,11 +480,13 @@ section:nth-child(1) .panier a img {
   align-items: center;
   margin-bottom: 50px;
   margin-top: 2em;
-  width: 100px;
-  background: blanchedalmond;
+  width: 80%;
+  background: #f69401;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 600;
 }
 .filter a {
   text-decoration: none;
