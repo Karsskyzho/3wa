@@ -575,6 +575,21 @@ button {
   transition: 1.5s;
 }
 
+.hoverOn {
+  display: none;
+  transition: all ease-in-out 0.5s;
+}
+
+.first-container div:hover .hoverOut,
+.second-container div:hover .hoverOut {
+  display: none;
+}
+
+.first-container div:hover .hoverOn,
+.second-container div:hover .hoverOn {
+  display: block;
+}
+
 /* --------------------------second container-----------------  */
 .second-container,
 .thrid-container {
@@ -677,92 +692,6 @@ button {
   .second div img {
     width: 260px;
     height: 260px;
-  }
-}
-.firstImg,
-.secondeImg,
-.thirdImg,
-.fourthImg,
-.fifthImg,
-.sixthImg,
-.seventhImg,
-.eighthImg,
-.ninthImg {
-  background-size: cover;
-  transition: all 1s ease-out;
-}
-
-.firstImg {
-  background-image: url("../images/savons/Savon-aloe-vera-patchouli-big.jpg");
-}
-
-.secondeImg {
-  background-image: url("../images/savons/Savon-Aloe-vera-menthe-fraiche-big.jpg");
-}
-
-.thirdImg {
-  background-image: url("../images/savons/Savon-artisanal-geranium-zoom.jpg");
-}
-
-.fourthImg {
-  background-image: url("../images/chaussures/VINCENT2_XB_07_1217.jpg");
-}
-
-.fifthImg {
-  background-image: url("../images/ceintures/ceinture2.jpg");
-}
-
-.sixthImg {
-  background-image: url("../images/sacs/porte-feuilles.jpg");
-}
-
-.seventhImg {
-  background-image: url("../images/chaussures/reali-escarpin-azuree-cannes (1).jpg");
-}
-
-.eighthImg {
-  background-image: url("../images/sacs/bag4.jpg");
-}
-
-.ninthImg {
-  background-image: url("../images/bustes/gold2.jpg");
-}
-
-@media screen and (min-width: 768px) {
-  .firstImg:hover {
-    background-image: url("../images/savons/Savon-patchouli-big.jpg");
-  }
-
-  .secondeImg:hover {
-    background: url("../images/savons/Savon-menthe-fraiche-big.jpg");
-  }
-
-  .thirdImg:hover {
-    background-image: url("../images/savons/Savon-geranium-aloe-vera-zoom.jpg");
-  }
-
-  .fourthImg:hover {
-    background-image: url("../images/chaussures/VINCENT2_XB_08_eb70.jpg");
-  }
-
-  .fifthImg:hover {
-    background-image: url("../images/ceintures/ceinture1.png");
-  }
-
-  .sixthImg:hover {
-    background-image: url("../images/sacs/porte-feuilles4.jpg");
-  }
-
-  .seventhImg:hover {
-    background-image: url("../images/chaussures/reali-escarpin-azuree-cannes (2).jpg");
-  }
-
-  .eighthImg:hover {
-    background-image: url("../images/sacs/bag1.png");
-  }
-
-  .ninthImg:hover {
-    background-image: url("../images/bustes/gold3.jpg");
   }
 }
 footer {
