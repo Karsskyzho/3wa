@@ -580,13 +580,13 @@ button {
   transition: all ease-in-out 0.5s;
 }
 
-.first-container div:hover .hoverOut,
-.second-container div:hover .hoverOut {
+.first-container div a:hover .hoverOut,
+.second-container div a:hover .hoverOut {
   display: none;
 }
 
-.first-container div:hover .hoverOn,
-.second-container div:hover .hoverOn {
+.first-container div a:hover .hoverOn,
+.second-container div a:hover .hoverOn {
   display: block;
 }
 
