@@ -14,7 +14,7 @@ main {
 hr {
     margin: 30px;
 }
-
+/* ---------------------- Page d'accueil -------------------------------- */
 /* --------------------------carrousel------------------------- */
 .first {
     display: flex;
@@ -34,18 +34,17 @@ hr {
         width: 60%;
         height: 100%;
         overflow: hidden;
-        border: rgba(203, 185, 132, 0.55) solid 1px;
+        border: $color_primary solid 1px;
         border-radius: 15px;
         gap: 30px;
         padding: 1em;
     }
-
 }
 
 .slider div img {
     width: 200px;
     height: 200px;
-    border: solid 1px rgba(209, 198, 198, 0.505);
+    border: solid 1px $color_primary;
     border-radius: 15px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }

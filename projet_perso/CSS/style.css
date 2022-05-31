@@ -478,6 +478,7 @@ hr {
   margin: 30px;
 }
 
+/* ---------------------- Page d'accueil -------------------------------- */
 /* --------------------------carrousel------------------------- */
 .first {
   display: flex;
@@ -497,7 +498,7 @@ hr {
   width: 60%;
   height: 100%;
   overflow: hidden;
-  border: rgba(203, 185, 132, 0.55) solid 1px;
+  border: #cbb984 solid 1px;
   border-radius: 15px;
   gap: 30px;
   padding: 1em;
@@ -506,7 +507,7 @@ hr {
 .slider div img {
   width: 200px;
   height: 200px;
-  border: solid 1px rgba(209, 198, 198, 0.505);
+  border: solid 1px #cbb984;
   border-radius: 15px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -889,10 +890,10 @@ button {
 
 @media screen and (max-width: 860px) {
   /*     main {
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-      } */
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  } */
   .galery {
     flex-direction: column;
     margin: 0;
