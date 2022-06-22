@@ -8,7 +8,9 @@ class AboutController extends AbstractController{
     public function index(): void {
 
         $this->display(
-            'about'
-        );
+            'about',
+            [
+                'title' => 'Royalement Français - Qui sommes-nous ?',
+            ]);
     }
 }

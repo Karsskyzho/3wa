@@ -25,3 +25,6 @@ export const removeClass = () => {
         revealBoucle.classList.remove('reveal');
     });
 }
+
+//schéma bdd
+//table categorie, taille, mesure/poids

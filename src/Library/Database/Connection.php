@@ -27,6 +27,14 @@ class Connection
         return $query->fetchAll();
     }
 
+    public function getUniqueResult(string $sql, ?array $parameters = null): array|false
+    {
+        $query = $this->pdo->prepare($sql);
+        $query->execute($parameters);
+
+        return $query->fetch();
+    }
+
     public function execute(string $sql, ?array $parameters = null): string
     {
         $query = $this->pdo->prepare($sql);

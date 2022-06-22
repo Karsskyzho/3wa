@@ -7,7 +7,7 @@
     </div>
 </header>
 
-<form action="" method="post" class="inscription">
+<form action="" method="POST" class="formulaire">
 
     <label for="">Email</label>
     <input type="email" name="email" id="" placeholder="Exemple@hotmail.fr" required>
@@ -16,6 +16,6 @@
     <input type="password" name="password" id="" required>
 
 
-    <button type="submit" value="S'inscrire">S'inscrire</button>
+    <button type="submit" value="connexion">Se connecter</button>
     <p>Pas encore inscrit ? Inscrivez-vous <a href="/inscription">ici</a></p>
 </form>

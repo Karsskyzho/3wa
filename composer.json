@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/projet_perso",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "karss",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}

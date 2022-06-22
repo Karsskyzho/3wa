@@ -17,8 +17,16 @@ return [
         'App\Controller\InscriptionController',
         'index'
     ],
-    '/connection' => [
+    '/connectionUser' => [
         'App\Controller\ConnectionController',
         'index'
-    ]
+    ],
+    '/layoutProduct' => [
+        'App\Controller\LayoutProductController',
+        'index'
+    ],
+    '/profil' => [
+        'App\Controller\ProfilController',
+        'index'
+]
 ];

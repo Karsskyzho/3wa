@@ -3,7 +3,7 @@
 /* Point d'entrée de l'application */
 
 // Démarrage de la session
-session_start();
+    session_start();
 
 // Chargement des fonctions utilitaires
 require 'helpers.php';

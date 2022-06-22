@@ -2,7 +2,7 @@
             <img class="banner" src="../images/images.jpg" alt="french castle banner">
         </div>
         <div class="title">
-            <h1>Royalement Français!</h1>s
+            <h1>Royalement Français!</h1>
             <h2>« A nul autre pareil ! »</h2>
         </div>
     </header>
@@ -19,10 +19,10 @@
             <p>Faire un filtre ici</p>
         </section>
         <!-- instanciation ProductsManager pour exécuter la fonction qui va afficher le contenu de la bdd dans la vue -->
-        <section class="galery">
+        <section class="gallery">
             <?php foreach ($products as $product):?>
-                <div class ="galery_content">
-                    <a href="">
+                <div class ="gallery_content">
+                    <a href="/layoutProduct?id=<?= $product['id']?>">
                         <img class="hoverOut" src=" <?= $product['product_image'] ?>" alt="">
                         <img class="hoverOn" src=" <?= $product['product_image_hover'] ?>" alt="">
                         <div class="title-price">

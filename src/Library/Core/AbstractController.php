@@ -12,4 +12,10 @@ class AbstractController
         // On inclut le layout
         require 'src/App/Views/layout.php';
     }
+
+    public function redirect(string $path): void
+    {
+        header('Location: ' . url($path));
+        exit();
+    }
 }

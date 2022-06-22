@@ -7,7 +7,6 @@ footer {
 }
 
 .contenu-footer {
-    width : 100%;
     gap : 15px;
     margin: 0 auto;
     display: flex;
@@ -41,4 +40,7 @@ footer {
 .liste-social {    
     display: flex;
     flex-wrap: wrap;
+}
+.footer-adress iframe {
+    width: 80%;
 }
