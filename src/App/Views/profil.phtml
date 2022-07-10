@@ -17,7 +17,8 @@
 </main>
 
 <div class="orders-list">
-
+    <h3>Vos commandes récentes</h3>
+    <!-- boucle for each qui affichera les 3 dernières commandes -->
 </div>
 
 <div class="personal">
@@ -27,25 +28,21 @@
     </div>
 
     <br>
-    <?= 'Nom : ' . $_SESSION['user_name'] ?>
+    <?= '<p> Nom : ' . $_SESSION['user_name'] . '</p>' ?>
     <br>
-    <?= 'Prénom : ' . $_SESSION['user_firstname']?>
+    <?= '<p> Prénom : ' . $_SESSION['user_firstname'] . '</p>' ?>
     <br>
-    <?= 'Mail : ' . $_SESSION['email']?>
+    <?= '<p>Mail : ' . $_SESSION['email'] . '</p>' ?>
     <br>
     <?php
         $explode = $_SESSION['userBirthday'];
         $number = explode("-", $explode);
-
         $date = new DateTime();
         $date->setDate($number[0], $number[1],$number[2]);
         $birthday = $date->format('d/m/Y');
-        echo 'date de naissance : ' . $birthday; ?>
+        echo '<p> date de naissance : ' . $birthday . '</p>' ?>
     <br>
     <hr>
     <p>Adresse</p>
-    <?= $_SESSION['address'] . ', <br>' . $_SESSION['user_region'] . ', <br>' . $_SESSION['city'] ?>
+    <?= $_SESSION['address'] . ', <br>' . $_SESSION['user_region'] . ', <br>' . $_SESSION['city']  . '</p>'?>
 </div>
-
-
-

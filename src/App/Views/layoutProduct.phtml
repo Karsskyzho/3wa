@@ -17,7 +17,7 @@
 
 
         <section class="content-product">
-
+<?php var_dump($products);?>
             <section class="images-product">
 
                     <div>
@@ -28,7 +28,14 @@
                         <div class="little-img">
                             <img src="<?= $products[0]['product_image'] ?>" alt="">
                             <img src="<?= $products[0]['product_image_hover'] ?>" alt="">
-                            <img src="<?= $products[0]['product_image'] ?>" alt="">
+
+                            <?php if ($products[0]['product_image3']) :{ ?>
+                            <img src="<?= $products[0]['product_image3'] ?>" alt="">
+                            <?php } endif; ?>
+
+                            <?php if ($products[0]['product_image4']) : {?>
+                                <img src="<?= $products[0]['product_image4'] ?>" alt="">
+                            <?php } endif ; ?>
                         </div>
 
                     </div>
@@ -37,22 +44,29 @@
                         <div class="description-add">
                             <h3><?= $products[0]['name_product'] ?></h3>
                             <p class="price"><?= $products[0]['price_product'] ?>€</p>
-                            <p>Référence produit : 000000<?= $products[0]['id'] ?></p>
+                            <p>Référence produit : 000000<?= $products[0]['product_id'] ?></p> <!-- à voir pour prendre l'id directement dans le get_ID -->
                             <p class="description-product"><?= nl2br($products[0]['description_product']) ?></p>
 
                             <div class="choice">
-                                <label>Sélectionnez votre taille</label>
-                                <select>
-                                    <option>
 
-                                    </option>
-                                </select>
-                                <label>Sélectionnez la quantité</label>
-                                <select>
-                                    <option>
+                                <?php if ($products[0]['label']): {
+                                    echo '<label for="size">Sélectionnez la taille</label>
+                                    <select id="size">';
+                                        foreach($products as $product): {
+                                            echo '<option>' . $product['label'] . '</option>';
+                                        } endforeach;
+                                        echo '</select>' ;
+                                        } endif; ?>
 
-                                    </option>
+                                <label for="quantity">Sélectionnez la quantité</label>
+                                <select id="quantity">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
                                 </select>
+
+
                                 <button type="submit">Ajouter au panier</button>
                             </div>
                         </div>

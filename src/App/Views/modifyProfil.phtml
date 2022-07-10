@@ -1,0 +1,44 @@
+<div class="background">
+    <img class="banner" src="../images/background.webp" alt="french castle banner">
+</div>
+<div class="title">
+    <h1>Royalement Français!</h1>
+    <h2>« A nul autre pareil ! »</h2>
+</div>
+</header>
+
+
+<p class="main-profil">
+
+
+<div class="orders-list">
+
+</div>
+
+<div class="personal">
+    <div>
+
+        <form action="" method="post" class="">
+            <label for="">Nom</label>
+            <input type="text" name="name" placeholder="Nom" value="<?= $_SESSION['user_name'] ?>" required>
+
+            <label for="">Prénom</label>
+            <input type="text" name="firstname" placeholder="Prénom" value="<?=$_SESSION['user_firstname']?>" required>
+
+            <label for="">Date de naissance</label>
+            <input type ="date" name="birthday" value="<?= $_SESSION['userBirthday'] ?>" required>
+
+
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Exemple@hotmail.fr" value="<?=$_SESSION['email']?>" required>
+
+
+            <label for="">Adresse</label> <!-- le for se lie avec l'id du select -->
+            <input type="text" name="address" placeholder="numéro et rue" value="<?= $_SESSION['address']?>" required>
+
+            <button type="submit" name="update" value="modifier">Modifier</button>
+        </form>
+    </div>
+    <?php var_dump($_POST); ?>
+</div>
+</main>
